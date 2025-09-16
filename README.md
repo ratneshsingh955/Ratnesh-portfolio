@@ -77,40 +77,6 @@ Update the `projectsData` array in `js/script.js`:
 ### Profile Image
 Replace `images/profile.jpg` with your professional photo (300x300px recommended)
 
-## 🚀 Deployment
-
-### Option 1: GitHub Pages
-1. Push code to GitHub repository
-2. Go to repository Settings > Pages
-3. Select source branch (usually `main`)
-4. Your site will be available at `https://username.github.io/repository-name`
-
-### Option 2: Netlify
-1. Create account on Netlify
-2. Drag and drop the project folder
-3. Site will be deployed automatically
-
-### Option 3: Vercel
-1. Create account on Vercel
-2. Import from GitHub or upload files
-3. Automatic deployment with custom domain support
-
-## 📧 Contact Form Setup
-
-The contact form currently shows a success message for demonstration. To make it functional:
-
-1. **Option 1: Formspree**
-   - Sign up at formspree.io
-   - Replace form action with your Formspree endpoint
-
-2. **Option 2: Netlify Forms**
-   - Add `netlify` attribute to the form
-   - Deploy on Netlify for automatic form handling
-
-3. **Option 3: EmailJS**
-   - Set up EmailJS service
-   - Update JavaScript to use EmailJS API
-
 ## 🎨 Color Palette
 
 The website uses a modern color scheme:
