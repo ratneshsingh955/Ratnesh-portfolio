@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initContactForm();
     initScrollAnimations();
     initParticles();
+    initResumeDownload();
     ensureTextVisibility();
 });
 
@@ -119,6 +120,24 @@ function initProjects() {
             icon: "🎮"
         },
         {
+            title: "Todo App",
+            description: "Full-stack task management application with CRUD operations and user authentication.",
+            category: "web",
+            technologies: ["React", "Node.js", "MongoDB", "Express"],
+            liveUrl: "#",
+            githubUrl: "#",
+            icon: "✅"
+        },
+        {
+            title: "Simple Learning App",
+            description: "Interactive educational platform with progress tracking and quiz functionality.",
+            category: "web",
+            technologies: ["JavaScript", "HTML5", "CSS3", "Local Storage"],
+            liveUrl: "#",
+            githubUrl: "#",
+            icon: "📚"
+        },
+        {
             title: "Legal-Ease Website",
             description: "Dynamic law management platform built with PHP, MySQL, and Bootstrap.",
             category: "web",
@@ -133,7 +152,7 @@ function initProjects() {
             category: "web",
             technologies: ["HTML5", "CSS3", "JavaScript"],
             liveUrl: "#",
-            githubUrl: "#",
+            githubUrl: "https://github.com/ratneshsingh955/ratnesh-portfolio",
             icon: "💼"
         }
     ];
@@ -172,6 +191,16 @@ function initProjects() {
     });
 
     renderProjects(projectsData);
+}
+
+// Resume Download Tracking
+function initResumeDownload() {
+    const resumeBtn = document.querySelector('a[download]');
+    if (resumeBtn) {
+        resumeBtn.addEventListener('click', function() {
+            showNotification("Resume download started! ✨", "success");
+        });
+    }
 }
 
 // Contact Form with EmailJS
