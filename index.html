@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ratnesh Singh - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("L5ydtKfbJsy5zsv2C"); 
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#home">Ratnesh Singh</a>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-background"><div class="hero-particles"></div></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">Hi, I’m <span class="text">Ratnesh Singh</span></h1>
+        <p class="hero-subtitle">Software Engineer</p>
+        <p class="hero-subtitle">Android & Front-end Developer</p>
+        <p class="hero-description">
+          I craft award-winning apps, multiplayer games, and scalable web platforms.  
+          From Android game engines to web apps, I thrive on building high-performance solutions that delight users and boost business impact.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="profile-card glass-card floating">
+          <div class="profile-image">
+            <img src="images/profile.jpeg" alt="Ratnesh Singh" id="profile-img">
+          </div>
+          <div class="floating-icons">
+            <div class="icon-item"><i class="fab fa-android"></i></div>
+            <div class="icon-item"><i class="fab fa-java"></i></div>
+            <div class="icon-item"><i class="fab fa-korvue"></i></div>
+            <div class="icon-item"><i class="fab fa-react"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator"><div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div></div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Turning complex ideas into powerful digital products</p>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            I’m a <b>Software Engineer</b> with <b>3+ years</b> of experience specializing in  
+            <b>Android apps, multiplayer game development, payment integration</b>, and  
+            <b>scalable architectures</b>.  
+            I’ve built <b>award-winning features</b> that boosted company revenue by 12–15% and delivered products used by thousands of players every day.  
+            My expertise spans from <b>Java/Kotlin Android SDKs</b> to <b>full-stack web apps</b>.
+          </p>
+          <div class="stats-grid">
+            <div class="stat-item glow-effect"><h3>3+</h3><p>Years Experience</p></div>
+            <div class="stat-item glow-effect"><h3>4+</h3><p>Projects Completed</p></div>
+            <div class="stat-item glow-effect"><h3>12+</h3><p>Games Launched</p></div>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Android & Games</h3>
+            <div class="skills">
+              <span class="skill-tag">Kotlin</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">Android</span>
+              <span class="skill-tag">Firebase</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">LibGdx</span>
+              <span class="skill-tag">Jetpack Compose</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Web & Backend</h3>
+            <div class="skills">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Tools & Framework</h3>
+            <div class="skills">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Android Studio</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Agile</span>
+              <span class="skill-tag">Trello</span>
+               <span class="skill-tag">Prompt Engineering</span>
+                <span class="skill-tag">Figma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects grid-pattern">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Some real-world apps and games I’ve built</p>
+      </div>
+      <div class="project-filters">
+        <button class="filter-btn active glow-effect" data-filter="all">All</button>
+        <button class="filter-btn glow-effect" data-filter="android">Android</button>
+        <button class="filter-btn glow-effect" data-filter="game">Games</button>
+        <button class="filter-btn glow-effect" data-filter="web">Web</button>
+      </div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- Experience (keep same) -->
+  <section id="experience" class="experience"> … </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">I’d love to hear about your next project</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let’s Connect</h3>
+          <p>Email me directly or use the form — I’ll reply fast.</p>
+          <div class="contact-methods">
+            <div class="contact-method"><i class="fas fa-envelope"></i><div><h4>Email</h4><p>ratneshsingh955@gmail.com</p></div></div>
+            <div class="contact-method"><i class="fas fa-phone"></i><div><h4>Phone</h4><p>+91 8934068644</p></div></div>
+            <div class="contact-method"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><p>India</p></div></div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/ratnesh-singhs/" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ratneshsingh955" class="social-link"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+          <div class="form-group"><input type="text" name="subject" placeholder="Subject" required></div>
+          <div class="form-group"><textarea name="message" placeholder="Your Message" rows="6" required></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer"><div class="container"><div class="footer-content"><p>&copy; 2025 Ratnesh Singh. All rights reserved.</p><p>Built with ❤️</p></div></div></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
